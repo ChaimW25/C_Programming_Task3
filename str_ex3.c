@@ -72,7 +72,7 @@ void print(int i, int j, int* num){
 }
 
 void gematria(){
-    printf("Gematria Sequences:");
+    printf("Gematria Sequences: ");
     int len=len_sentence();
     int s=gematri_word();
     int i=0,j=0;
@@ -165,7 +165,7 @@ void atbash(){
     fill_atb();
     char atb_temp[WORD];
     reverse_atb_temp(atb_temp);
-    printf("Atbash Sequences:");
+    printf("Atbash Sequences: ");
     int len=len_sentence();
     int len2=length_word()-1;
     int printNum=0;
@@ -230,7 +230,7 @@ int num_of_chars(int i, int j){
 
 void anagram(){
     fill_anagram();
-    printf("Anagram Sequences:");
+    printf("Anagram Sequences: ");
     int printNum=0;
     int len=len_sentence();
     int i=0, j=length_word()-2;
