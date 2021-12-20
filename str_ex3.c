@@ -251,5 +251,7 @@ void anagram(){
                 i++; j++;}
         }
     }
+        printf("\n");
+
 }
 
