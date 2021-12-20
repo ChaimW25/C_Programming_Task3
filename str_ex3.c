@@ -206,12 +206,15 @@ int seq_anagram(int* i, int* j){
         if(txt[a]==32||txt[a]=='\n'||txt[a]=='\t')continue;
             //if the chat isn't there
         else if (anagram_arr[(int)txt[a]]==0){
+           // int s=a-*i;
            *i+=(1); *j+=(1);
             fill_anagram();
             return 0;}
         //if the char is there
         else{
             anagram_arr[(int)txt[a]]--;
+//            if (anagram_arr[(int)txt[a]]<0){
+//                int s=a-*i; *i+=s; *j+=s;
         }
     }
     fill_anagram();
@@ -251,7 +254,6 @@ void anagram(){
                 i++; j++;}
         }
     }
-        printf("\n");
-
+    printf("\n");
 }
 
